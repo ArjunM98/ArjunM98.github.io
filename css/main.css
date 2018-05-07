@@ -1,0 +1,58 @@
+body{
+  width: 80vw; 
+  margin: 0 auto; 
+  font-family: Open Sans, sans-serif; 
+  background-color:#fffaf0	
+}
+
+.landing{ 
+  height: 100vh;
+}
+
+.navigation-container{ 
+  margin-top: 25px; 
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+#navigation-bar ul li{
+  list-style-type: none;
+  display: inline-block; 
+  margin: 0px 10px;
+}
+
+#navigation-bar ul li a{
+  text-decoration: none;
+  color: grey; 
+}
+
+.content { 
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column; 
+  height: 80%; 
+  margin-left: 50px; 
+  font-family: Lato, sans-serif; 
+}
+
+#name{ 
+  font-size: 80px; 
+  color: #27303B; 
+}
+
+#intro-description{ 
+  font-size: 18px; 
+  margin-top: -80px; 
+  max-width: 750px; 
+  line-height: 1.8; 
+}
+
+#more-info{ 
+  background-color: gold; 
+}
+
+.footer{
+  height: 200px; 
+  background-color: blue; 
+}
