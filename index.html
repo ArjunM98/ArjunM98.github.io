@@ -3,12 +3,14 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="Arjun Mittal's Personal Website and Resume">
   <meta name="author" content="Arjun Mittal">
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+  <script src="js/particles.js"></script>
 
   <title>Arjun Mittal Portfolio</title>
 
@@ -16,8 +18,12 @@
 
 <body>
 
-  <div class="landing">
+  <div id="particles-js"> </div>
+  
+  <!-- html content -->
+  <div id="landing">
 
+    <!-- Navigation Bar -->
     <div class="navigation-container">
       <div id="navigation-bar">
 
@@ -31,30 +37,39 @@
           <li>
             <a href="#">Resume</a>
           </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
 
       </div>
     </div>
 
-    <div class="content">
+    <!-- Information on landing page -->
+    <div id="content">
+
+      <!-- Name -->
       <div id="name">
         <p> Hi, I'm Arjun! </p>
       </div>
 
+      <!-- Blurb -->
       <div id="intro-description">
-        <p> 
-          Computer Engineering Student at the University of Toronto. <span id="more-info"> More about me </span>
-          </p>
-        <!--<p>
-          I'm a Computer Engineering student at the University of Toronto. In my spare time you can find me either tinkering with a
-          side project or binging the latest show on Netflix
-        </p> -->
+        <p>
+          Computer Engineering Student at the University of Toronto.
+          <span id="more-info"> More about me </span>
+        </p>
       </div>
+
     </div>
+
   </div>
+  
+  <!-- scripts -->
+  <script src="js/app.js"></script>
 
+  <!-- Contact/footer of home page-->
   <div class="footer">
-
   </div>
 
 </body>

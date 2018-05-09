@@ -2,11 +2,24 @@ body{
   width: 80vw; 
   margin: 0 auto; 
   font-family: Open Sans, sans-serif; 
-  background-color:#fffaf0	
+  background-color:#ffffff	
 }
 
-.landing{ 
+#landing{ 
   height: 100vh;
+  width: 100%; 
+  z-index: 1000;
+  overflow: hidden;
+}
+
+#particles-js{ 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  position: absolute; 
+  display: block; 
+  z-index: -1000;
 }
 
 .navigation-container{ 
@@ -26,7 +39,7 @@ body{
   color: grey; 
 }
 
-.content { 
+#content { 
   display: flex;
   align-items: flex-start;
   justify-content: center;
