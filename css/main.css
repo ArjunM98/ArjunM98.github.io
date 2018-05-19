@@ -1,11 +1,6 @@
 /*****************************
 * GENERAL
 *****************************/ 
-
-*{ 
-  max-width: 100%; 
-}
-
 p{ 
   margin: 0; 
 }
@@ -14,7 +9,8 @@ body{
   width: 80vw; 
   margin: 0 auto; 
   font-family: Open Sans, sans-serif; 
-  background-color:#4C5364	
+  background-color:#4C5364; 
+  overflow-x: hidden; 
 }
 
 #particles-js{ 
@@ -22,7 +18,7 @@ body{
   top: 0; 
   left: 0; 
   width: 100vw; 
-  height: 100vh; 
+  height: 100%; 
   position: absolute; 
   display: block; 
   z-index: -1000;
@@ -104,7 +100,80 @@ body{
 * FOOTER
 *****************************/ 
 
-.footer{
-  height: 200px; 
-  background-color: blue; 
+.footer{ 
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 250px; 
+  width: 100vw;
+  background-color: #C26868; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-content: center; 
+  align-items: center; 
+  color: white; 
+}
+
+.footer-content{
+  width: 80vw; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center ;
+  align-items: flex-start; 
+}
+
+.social-icons{ 
+  font-size: 1.5em; 
+}
+
+.social-icons a{ 
+  color: inherit;  
+}
+
+.social-icons ul{ 
+  padding: 0; 
+}
+
+.social-icons ul li{ 
+  list-style-type: none;
+  display: inline-block; 
+  
+}
+
+.social-icons ul li a{ 
+  text-decoration: none; 
+}
+
+.social-icons ul li:not(:nth-child(1)):not(:nth-child(4)){ 
+  margin-left: 20px; 
+  margin-right: 20px; 
+}
+
+.social-icons ul li:nth-child(1){ 
+  margin-right: 20px; 
+}
+
+
+.social-icons ul li:nth-child(4){ 
+  margin-left: 20px; 
+}
+
+#outro-title{
+  font-weight: bold; 
+  margin-top: 50px; 
+  margin-bottom: 20px; 
+  display: inline-block; 
+  font-size: 2em; 
+}
+
+#outro-description{ 
+    line-height: 1.5em; 
+    max-width: 500px;
+}
+
+#copyright{ 
+  margin-bottom: 10px; 
 }
