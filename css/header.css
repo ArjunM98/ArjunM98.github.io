@@ -1,0 +1,25 @@
+/*****************************
+* NAVIGATION
+*****************************/ 
+
+.navigation-container{ 
+  margin-top: 25px; 
+  display: flex; 
+  justify-content: center;
+}
+
+.navigation-container a{
+  padding: 20px;
+}
+
+#left-nav{
+  margin-right: 30px; 
+  display: flex; 
+  align-items: center;
+}
+
+#right-nav{
+  margin-left: 30px; 
+  display: flex; 
+  align-items: center;
+}
