@@ -2,12 +2,7 @@
 * FOOTER
 *****************************/ 
 
-.footer{ 
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+#footer{
   width: 100vw;
   background-color: #C26868; 
   display: flex; 
@@ -18,7 +13,7 @@
   color: white; 
 }
 
-.footer-content{
+#footer-content{
   width: 80vw; 
   display: flex; 
   flex-direction: column; 
@@ -26,39 +21,39 @@
   align-items: flex-start; 
 }
 
-.social-icons{ 
+#social-icons{ 
   font-size: 1.5em; 
 }
 
-.social-icons a{ 
+#social-icons a{ 
   color: #235493; 
 }
 
-.social-icons ul{ 
+#social-icons ul{ 
   padding: 0; 
 }
 
-.social-icons ul li{ 
+#social-icons ul li{ 
   list-style-type: none;
   display: inline-block; 
   
 }
 
-.social-icons ul li a{ 
+#social-icons ul li a{ 
   text-decoration: none; 
 }
 
-.social-icons ul li:not(:nth-child(1)):not(:nth-child(4)){ 
+#social-icons ul li:not(:nth-child(1)):not(:nth-child(4)){ 
   margin-left: 20px; 
   margin-right: 20px; 
 }
 
-.social-icons ul li:nth-child(1){ 
+#social-icons ul li:nth-child(1){ 
   margin-right: 20px; 
 }
 
 
-.social-icons ul li:nth-child(4){ 
+#social-icons ul li:nth-child(4){ 
   margin-left: 20px; 
 }
 

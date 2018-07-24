@@ -2,13 +2,15 @@
 * NAVIGATION
 *****************************/ 
 
-.navigation-container{ 
+#navigation-container{ 
+  position: fixed; 
+  width: 100vw; 
   margin-top: 25px; 
   display: flex; 
   justify-content: center;
 }
 
-.navigation-container a{
+#navigation-container a{
   padding-left: 20px;
   padding-right: 20px; 
 }
