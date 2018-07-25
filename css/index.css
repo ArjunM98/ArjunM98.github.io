@@ -1,0 +1,56 @@
+#particles-js{ 
+    margin: 0; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100%; 
+    position: absolute; 
+    z-index: -1000;
+  }
+  
+  #landing{
+    width: 80vw; 
+    margin: 0 auto; 
+    height: 100vh;
+    z-index: 1000;
+  }
+  
+  /*****************************
+  * LANDING PAGE - INFO
+  *****************************/ 
+  
+  #content { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%; 
+    font-family: Montserrat, sans-serif; 
+  }
+  
+  #name{ 
+    font-size: 7em; 
+    font-weight: light; 
+    color: black; 
+  }
+  
+  #intro-description{ 
+    font-size: 1.5em; 
+    max-width: 800px; 
+    line-height: 1.8; 
+    color: black; 
+  }
+  
+  #more-info{ 
+    font-weight: bold;
+    color: #235493;
+    font-style: italic;
+    transition: 0.25s ease-in-out; 
+  }
+  
+  #more-info:hover{ 
+    color: black; 
+    border-bottom: 2px solid black; 
+  }
+  
+  
