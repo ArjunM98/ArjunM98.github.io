@@ -1,56 +1,89 @@
-#particles-js{ 
-    margin: 0; 
-    top: 0; 
-    left: 0; 
-    width: 100vw; 
-    height: 100%; 
-    position: absolute; 
+#particles-js {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
     z-index: -1000;
-  }
-  
-  #landing{
-    width: 80vw; 
-    margin: 0 auto; 
+}
+
+#landing {
+    width: 80vw;
+    margin: 0 auto;
     height: 100vh;
     z-index: 1000;
-  }
-  
-  /*****************************
-  * LANDING PAGE - INFO
-  *****************************/ 
-  
-  #content { 
+}
+
+
+/*****************************
+* LANDING PAGE - INFO
+*****************************/
+
+#content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100%; 
-    font-family: Montserrat, sans-serif; 
-  }
-  
-  #name{ 
-    font-size: 7em; 
-    font-weight: light; 
-    color: black; 
-  }
-  
-  #intro-description{ 
-    font-size: 1.5em; 
-    max-width: 800px; 
-    line-height: 1.8; 
-    color: black; 
-  }
-  
-  #more-info{ 
+    height: 100%;
+    font-family: Montserrat, sans-serif;
+}
+
+#name {
+    font-size: 7em;
+    font-weight: light;
+    color: black;
+}
+
+#intro-description {
+    font-size: 1.5em;
+    max-width: 100%;
+    line-height: 1.8;
+    color: black;
+}
+
+#more-info {
     font-weight: bold;
     color: #235493;
     font-style: italic;
-    transition: 0.25s ease-in-out; 
-  }
-  
-  #more-info:hover{ 
-    color: black; 
-    border-bottom: 2px solid black; 
-  }
-  
-  
+    transition: 0.25s ease-in-out;
+}
+
+#more-info:hover {
+    color: white;
+    background-color: #235493;
+}
+
+#social-icons-content a {
+    color: #235493;
+}
+
+.social-icons ul {
+    padding: 0;
+}
+
+.social-icons ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.social-icons ul li a {
+    text-decoration: none;
+}
+
+.social-icons ul li:not(:nth-child(1)):not(:nth-child(4)) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.social-icons ul li:nth-child(1) {
+    margin-right: 20px;
+}
+
+.social-icons ul li:nth-child(4) {
+    margin-left: 20px;
+}
+
+.social-icons {
+    font-size: 1.5em;
+}

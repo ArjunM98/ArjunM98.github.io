@@ -1,18 +1,19 @@
 /*****************************
 * GENERAL
-*****************************/ 
-p{ 
-  margin: 0; 
+*****************************/
+
+p {
+    margin: 0;
 }
 
-body{
-  margin: 0;  
-  font-family: Montserrat, sans-serif; 
-  background-color:white; 
-  overflow-x: hidden; 
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+    overflow-x: hidden;
 }
 
-a{ 
-  text-decoration: none; 
-  color: inherit; 
+a {
+    text-decoration: none;
+    color: inherit;
 }

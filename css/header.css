@@ -1,28 +1,28 @@
 /*****************************
 * NAVIGATION
-*****************************/ 
+*****************************/
 
-#navigation-container{ 
-  position: fixed; 
-  width: 100vw; 
-  margin-top: 25px; 
-  display: flex; 
-  justify-content: center;
+#navigation-container {
+    position: fixed;
+    width: 100vw;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
 
-#navigation-container a{
-  padding-left: 20px;
-  padding-right: 20px; 
+#navigation-container a {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#left-nav{
-  margin-right: 30px; 
-  display: flex; 
-  align-items: center;
+#left-nav {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
 }
 
-#right-nav{
-  margin-left: 30px; 
-  display: flex; 
-  align-items: center;
+#right-nav {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
 }
