@@ -5,9 +5,35 @@
 #navigation-container {
     position: fixed;
     width: 100vw;
-    margin-top: 25px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    height: 10%;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+#navigation-container.scrolled {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: white;
+    height: 10%;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+#navigation-bar {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 #navigation-container a {
@@ -15,14 +41,7 @@
     padding-right: 20px;
 }
 
-#left-nav {
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-}
-
-#right-nav {
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
+#trademark {
+    font-weight: 600;
+    font-size: 20px;
 }
