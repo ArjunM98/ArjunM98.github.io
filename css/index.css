@@ -30,16 +30,16 @@
 }
 
 #name {
-    font-size: 5em;
+    font-size: 4.5rem;
     font-weight: 500;
     color: black;
     max-width: 70%;
 }
 
 #intro-description {
-    font-size: 1.5em;
+    font-size: 1.3rem;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 2;
     color: black;
 }
 
@@ -60,8 +60,8 @@
 }
 
 #waving {
-    height: 75px;
-    width: 75px;
+    height: 12%;
+    width: 12%;
     transform-origin: 70% 70%;
     animation: rotation 0.4s infinite alternate backwards;
     animation-timing-function: ease-in-out;
@@ -104,5 +104,50 @@
 }
 
 .social-icons {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+}
+
+#spacer {
+    width: 100vw;
+    height: 3vh;
+    background-color: #F8F9F9;
+}
+
+
+/*****************************
+* PROJECT PAGE - INFO
+*****************************/
+
+#projects-list {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#projects-header {
+    margin-top: 5vh;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+#underline {
+    width: 80vw;
+    height: 2px;
+    background-color: #DEDDDD;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.project-container {
+    width: 70%;
+}
+
+.project-image {
+    width: 30%;
+    height: 20%
 }

@@ -10,7 +10,7 @@
     align-items: center;
     font-family: Rubik;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     height: 15%;
     transition: 0.3s;
     z-index: 1000;
@@ -23,12 +23,11 @@
     justify-content: center;
     font-family: Rubik;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: white;
     height: 15%;
     transition: 0.3s;
     z-index: 1000;
-    box-shadow: 0 2px 2px -2px gray;
 }
 
 #navigation-bar {
@@ -44,5 +43,5 @@
 
 #trademark {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
