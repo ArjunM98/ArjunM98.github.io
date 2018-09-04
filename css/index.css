@@ -26,20 +26,31 @@
     align-items: flex-start;
     justify-content: flex-end;
     height: 90%;
-    font-family: Rubik, sans-serif;
+    /* font-family: Rubik, sans-serif; */
 }
 
 #name {
-    font-size: 4.5rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 800;
     color: black;
-    max-width: 70%;
+    font-family: Raleway;
+}
+
+#large-divider {
+    height: 4px;
+    background-color: #235493;
+    width: 93px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #intro-description {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 2;
+    font-family: Nunito;
+    font-weight: 400;
+    color: #212121;
     color: black;
 }
 
@@ -60,8 +71,8 @@
 }
 
 #waving {
-    height: 12%;
-    width: 12%;
+    height: 8%;
+    width: 8%;
     transform-origin: 70% 70%;
     animation: rotation 0.4s infinite alternate backwards;
     animation-timing-function: ease-in-out;
@@ -125,8 +136,9 @@
 
 #projects-header {
     margin-top: 5vh;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 1.8rem;
+    font-family: Raleway;
 }
 
 #underline {
@@ -138,17 +150,25 @@
 }
 
 .project {
+    font-family: Nunito;
     display: flex;
     flex-direction: row;
     margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .project-container {
-    width: 65%;
+    width: 60%;
+    margin-right: 5%;
+}
+
+.project-container-alternate {
+    width: 60%;
+    margin-left: 5%;
 }
 
 .project-title {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
@@ -161,11 +181,24 @@
 }
 
 .project-description {
-    width: 80%;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 .project-image {
     width: 35%;
     height: 100%;
+}
+
+.project-tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-tags p {
+    background-color: #F2F2F2;
+    border-radius: 20%;
+    padding: 1%;
+    margin-top: 2%;
+    margin-right: 2%;
 }
