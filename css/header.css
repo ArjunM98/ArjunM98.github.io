@@ -46,3 +46,17 @@
     font-weight: 800;
     font-size: 1.8rem;
 }
+
+#expand-navbar {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #navigation-links a {
+        display: none;
+    }
+    #navigation-links a#expand-navbar {
+        display: block;
+        float: right;
+    }
+}

@@ -1,0 +1,77 @@
+/*****************************
+* PROJECT PAGE - INFO
+*****************************/
+
+#projects-list {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#projects-header {
+    margin-top: 5vh;
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family: Raleway;
+}
+
+#underline {
+    width: 80vw;
+    height: 2px;
+    background-color: #DEDDDD;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.project {
+    font-family: Nunito;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.project-container {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.project-container-alternate {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.project-title-underline {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 5vw;
+    height: 2px;
+    background-color: #235493;
+}
+
+.project-description {
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.project-image {
+    width: 35%;
+    height: 100%;
+}
+
+.project-tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-tags p {
+    background-color: #F2F2F2;
+    border-radius: 20%;
+    padding: 1%;
+    margin-top: 2%;
+    margin-right: 2%;
+}

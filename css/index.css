@@ -1,3 +1,7 @@
+/*****************************
+* LANDING PAGE - INFO
+*****************************/
+
 #particles-js {
     margin: 0;
     top: 0;
@@ -15,33 +19,26 @@
     z-index: 1000;
 }
 
-
-/*****************************
-* LANDING PAGE - INFO
-*****************************/
-
 #content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
     height: 90%;
-    /* font-family: Rubik, sans-serif; */
 }
 
 #name {
     font-size: 3.5rem;
     font-weight: 800;
-    color: black;
     font-family: Raleway;
 }
 
 #large-divider {
-    height: 4px;
+    height: 0.5vh;
     background-color: #235493;
-    width: 93px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 10vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 #intro-description {
@@ -122,83 +119,4 @@
     width: 100vw;
     height: 3vh;
     background-color: #F8F9F9;
-}
-
-
-/*****************************
-* PROJECT PAGE - INFO
-*****************************/
-
-#projects-list {
-    width: 80vw;
-    margin: 0 auto;
-}
-
-#projects-header {
-    margin-top: 5vh;
-    font-weight: 900;
-    font-size: 1.8rem;
-    font-family: Raleway;
-}
-
-#underline {
-    width: 80vw;
-    height: 2px;
-    background-color: #DEDDDD;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-}
-
-.project {
-    font-family: Nunito;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-
-.project-container {
-    width: 60%;
-    margin-right: 5%;
-}
-
-.project-container-alternate {
-    width: 60%;
-    margin-left: 5%;
-}
-
-.project-title {
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.project-title-underline {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    width: 5vw;
-    height: 2px;
-    background-color: #235493;
-}
-
-.project-description {
-    line-height: 1.5;
-    font-weight: 300;
-}
-
-.project-image {
-    width: 35%;
-    height: 100%;
-}
-
-.project-tags {
-    display: flex;
-    flex-direction: row;
-}
-
-.project-tags p {
-    background-color: #F2F2F2;
-    border-radius: 20%;
-    padding: 1%;
-    margin-top: 2%;
-    margin-right: 2%;
 }
