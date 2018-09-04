@@ -70,8 +70,8 @@
 
 .project-tags p {
     background-color: #F2F2F2;
-    border-radius: 20%;
-    padding: 1%;
-    margin-top: 2%;
-    margin-right: 2%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
