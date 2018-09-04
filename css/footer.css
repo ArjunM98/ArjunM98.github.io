@@ -1,0 +1,46 @@
+/*****************************
+* FOOTER
+*****************************/
+
+#footer {
+    font-family: Raleway;
+    width: 100vw;
+    background-color: #C26868;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+#footer-content {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#social-icons-footer a {
+    color: white;
+}
+
+#outro-title {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 2em;
+}
+
+#outro-description {
+    font-family: Nunito;
+    line-height: 1.5em;
+    max-width: 500px;
+}
+
+#copyright {
+    font-family: Nunito;
+    margin-bottom: 10px;
+}
