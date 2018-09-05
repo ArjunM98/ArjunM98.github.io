@@ -96,6 +96,11 @@
     margin-right: 5px;
 }
 
+.experience-type {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
 @media all and (max-width:850px) {
     .list-item,
     .list-item-reverse {
