@@ -46,9 +46,10 @@
     font-size: 1.1rem;
 }
 
-#trademark {
+#trademark a {
     font-weight: 800;
     font-size: 1.8rem;
+    padding: 0;
 }
 
 #expand-navbar {
