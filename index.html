@@ -12,14 +12,12 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/project.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/particles.js"></script>
 
     <title>Arjun Mittal</title>
@@ -34,16 +32,19 @@
     <div id="navigation-container">
 
         <div id="navigation-bar">
-            <div id="trademark">
-                <p> Arjun. </p>
-            </div>
-            <div id="navigation-links">
-                <a href="projects.html"> projects </a>
-                <a target="_blank" href="resume/Arjun_Mittal_Resume_2018.pdf">resume</a>
-                <a href="#"> contact </a>
-                <a href="#" id="expand-navbar">
+            <div id="minimal-navbar">
+                <div id="trademark">
+                    <p> Arjun. </p>
+                </div>
+                <a href="javascript:void(0)" onclick="expandNavbar()" id="expand-navbar">
                     <i class="fa fa-bars"></i>
                 </a>
+            </div>
+            <div id="navigation-links">
+                <a href="#work"> work </a>
+                <a href="#project"> projects </a>
+                <a target="_blank" href="resume/Arjun_Mittal_Resume_2018.pdf">resume</a>
+                <a href="#footer"> contact </a>
             </div>
         </div>
 
@@ -67,14 +68,10 @@
             <!-- Blurb -->
             <div id="intro-description">
                 <p>
-                    I'm a computer engineering student at the University of Toronto with an interest in machine learning, robotics, and autonomous vehicles. Equipped with a curious mind, I'm constantly exploring new technologies or tinkering with a side project. Interested
-                    in learning more?
+                    I'm a computer engineering student at the University of Toronto with an interest in machine learning, robotics, and autonomous vehicles.
                     <span id="more-info"> Connect with me! </span>
                 </p>
             </div>
-
-            <!-- Equipped with a curious mind, I'm constantly exploring new technologies or tinkering with a
-                        <span id="more-info"> <a href="#"> side project. </a> </span> -->
 
             <div class="social-icons" id="social-icons-content">
                 <ul>
@@ -102,48 +99,79 @@
 
     <div id="spacer"> </div>
 
-    <div id="projects-list">
-
-        <div id="projects-header">
-            <p> Projects. </p>
+    <div class="list" id="work">
+        <div class="list-header">
+            <p> Experiences. </p>
         </div>
+        <div class="underline"></div>
 
-        <div id="underline"></div>
-
-        <div class="project">
-            <div class="project-container">
-                <div class="project-title">
-                    <p> Google Maps </p>
+        <div class="list-item">
+            <div class="list-container">
+                <div class="list-container-title">
+                    <p> Scotiabank </p>
                 </div>
-                <div class="project-title-underline"> </div>
-                <div class="project-description">
+                <div class="list-title-underline"> </div>
+                <div class="list-container-date">
+                    <p> Summer 2018 </p>
+                </div>
+                <div class="list-container-description">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum posuere lacinia. Etiam ac nisl et magna pretium maximus non nec metus. Etiam eget metus sed nisi pulvinar tempor vitae nec mi. Nam tincidunt commodo sagittis. Proin fermentum,
                         lorem sit amet ultrices aliquet, mauris velit placerat sapien, eu molestie quam.
                     </p>
                 </div>
-                <div class="project-tags">
+                <div class="list-tags">
                     <p> C++ </p>
                     <p> Full Stack Dev </p>
                 </div>
             </div>
-            <img class="project-image" src="images/mapper.png" />
+            <img class="list-image" src="images/scotiabank.png" />
         </div>
 
-        <div class="project">
-            <img class="project-image" src="images/grubit.png" />
-            <div class="project-container-alternate">
-                <div class="project-title">
+    </div>
+
+    <div class="list" id="project">
+
+        <div class="list-header">
+            <p> Projects. </p>
+        </div>
+
+        <div class="underline"></div>
+
+        <div class="list-item">
+            <div class="list-container">
+                <div class="list-container-title">
                     <p> Google Maps </p>
                 </div>
-                <div class="project-title-underline"> </div>
-                <div class="project-description">
+                <div class="list-title-underline"> </div>
+                <div class="list-container-description">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum posuere lacinia. Etiam ac nisl et magna pretium maximus non nec metus. Etiam eget metus sed nisi pulvinar tempor vitae nec mi. Nam tincidunt commodo sagittis. Proin fermentum,
                         lorem sit amet ultrices aliquet, mauris velit placerat sapien, eu molestie quam.
                     </p>
                 </div>
-                <div class="project-tags">
+                <div class="list-tags">
+                    <p> C++ </p>
+                    <p> Full Stack Dev </p>
+                </div>
+            </div>
+            <img class="list-image" src="images/mapper.png" />
+        </div>
+
+        <div class="list-item">
+            <img class="list-image" src="images/grubit.png" />
+            <div class="list-container-alternate">
+                <div class="list-container-title">
+                    <p> Google Maps </p>
+                </div>
+                <div class="list-title-underline"> </div>
+                <div class="list-container-description">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum posuere lacinia. Etiam ac nisl et magna pretium maximus non nec metus. Etiam eget metus sed nisi pulvinar tempor vitae nec mi. Nam tincidunt commodo sagittis. Proin fermentum,
+                        lorem sit amet ultrices aliquet, mauris velit placerat sapien, eu molestie quam.
+                    </p>
+                </div>
+                <div class="list-tags">
                     <p> C++ </p>
                     <p> Full Stack Dev </p>
                 </div>

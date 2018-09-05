@@ -19,13 +19,13 @@ a {
 
 @media all and (min-width: 375px) {
     html {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
 @media all and (min-width: 425px) {
     html {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
