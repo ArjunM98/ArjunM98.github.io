@@ -1,0 +1,155 @@
+/*****************************
+* Generic Custom List Style
+*****************************/
+
+.list {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.list-header {
+    padding-top: 5vh;
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family: Raleway;
+}
+
+.underline {
+    width: 80vw;
+    height: 2px;
+    background-color: #DEDDDD;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.list-item {
+    font-family: Nunito;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.list-item-reverse {
+    font-family: Nunito;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.list-container {
+    max-width: 55%;
+    margin-right: 5%;
+}
+
+.list-item-reverse .list-container {
+    margin: 0 0 0 5%;
+}
+
+.list-container-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.list-title-underline {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 5vw;
+    height: 2px;
+    background-color: #235493;
+}
+
+.list-container-date {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+}
+
+.list-container-description {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.list-image {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-image img {
+    width: 100%;
+}
+
+.list-tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-tags p {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+@media all and (max-width:850px) {
+    .list-item,
+    .list-item-reverse {
+        font-family: Nunito;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .list-container {
+        max-width: 100%;
+        margin: 0%
+    }
+    .list-item-reverse .list-container {
+        max-width: 100%;
+        margin: 0%;
+    }
+    .list-image {
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5%;
+    }
+    .list-image img {
+        width: 65%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .list-item,
+    .list-item-reverse {
+        font-family: Nunito;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .list-container {
+        max-width: 100%;
+        margin: 0%
+    }
+    .list-item-reverse .list-container {
+        max-width: 100%;
+        margin: 0%;
+    }
+    .list-image {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .list-image img {
+        width: 100%;
+    }
+}
