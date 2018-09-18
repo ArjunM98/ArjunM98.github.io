@@ -83,17 +83,14 @@
     width: 100%;
 }
 
-.list-tags {
-    display: flex;
-    flex-direction: row;
-}
-
-.list-tags p {
+.tag {
+    display: inline-block;
     background-color: #F2F2F2;
     border-radius: 10px;
     padding: 5px 10px;
     margin-top: 10px;
     margin-right: 5px;
+    max-height: 26px;
 }
 
 .experience-type {
