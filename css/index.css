@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 2.8rem;
+    font-size:clamp(2rem, 7vw, 2.8rem);
     font-weight: 800;
 }  
 
@@ -64,6 +64,7 @@
 
 #name-text {
     display: inline-block;
+    white-space: nowrap;
 }
   
 #name-text::after{
@@ -90,6 +91,13 @@
     margin: 1.1rem 0 2.2rem 0;
     border-radius: 2px;
 }
+
+@media (max-width:480px){
+    #name-underline{
+        width:80px;               /* shorter line on phones */
+        margin:0.9rem 0 2rem 0;   /* slightly tighter gap   */
+    }
+}  
 
 #large-divider {
     height: 0.5vh;
