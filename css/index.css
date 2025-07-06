@@ -23,14 +23,72 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
-    height: 90%;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 700px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#name-line-wrapper {
+    display: inline-block;
+    text-align: left;
+}
+  
+#name-wrapper {
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+}  
+
+#name-block{
+    display:inline-block;
+    position:relative;        /* so the underline stays with it */
+    font-family:'Raleway',sans-serif;
+    font-size:2.8rem;
+    font-weight:800;
+    margin:0;                 /* keep your existing margins if any */
 }
 
 #name {
-    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8rem;
     font-weight: 800;
-    font-family: Raleway;
+    margin: 0;
+    display: inline;
+    position: relative;
+}
+
+#name-text {
+    display: inline-block;
+}
+  
+#name-text::after{
+    content:'';
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-1.1rem;           /* gap between text and line             */
+    width:120px;              /* line length — tweak to taste          */
+    height:3px;
+    background:#235493;
+    border-radius:2px;
+}
+
+#name .emoji {
+    margin-left: 0.4rem;
+    vertical-align: -0.1em;   /* optional fine-tune */
+}
+
+#name-underline {
+    width: 120px;
+    height: 3px;
+    background: #235493;
+    margin: 1.1rem 0 2.2rem 0;
+    border-radius: 2px;
 }
 
 #large-divider {
@@ -41,14 +99,12 @@
     margin-bottom: 2vh;
 }
 
-#intro-description {
+#intro-description p {
     font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 2;
-    font-family: Nunito;
-    font-weight: 400;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
     color: #212121;
-    color: black;
 }
 
 #more-info {
@@ -67,13 +123,13 @@
     color: #235493;
 }
 
-#waving {
-    height: 8%;
-    width: 8%;
-    transform-origin: 70% 70%;
-    animation: rotation 0.4s infinite alternate backwards;
-    animation-timing-function: ease-in-out;
-    margin-left: -2%;
+#waving{
+    width:1.35em;
+    height:1.35em;
+    margin-left:1rem;      /* space between name and emoji          */
+    vertical-align:-0.15em;   /* sit nicely on the baseline            */
+    transform-origin:70% 70%;
+    animation:rotation .4s infinite alternate ease-in-out;
 }
 
 @-webkit-keyframes rotation {
@@ -87,15 +143,24 @@
 
 .social-icons ul {
     padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
 }
-
+  
 .social-icons ul li {
     list-style-type: none;
-    display: inline-block;
 }
-
+  
 .social-icons ul li a {
-    text-decoration: none;
+    color: #235493;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+  
+.social-icons ul li a:hover {
+    color: black;
 }
 
 .social-icons ul li:not(:nth-child(1)):not(:nth-child(4)) {
@@ -119,4 +184,8 @@
     width: 100vw;
     height: 3vh;
     background-color: #F8F9F9;
+}
+
+.emoji {
+    margin: 0 4px;
 }

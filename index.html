@@ -10,9 +10,6 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/list.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
@@ -29,28 +26,6 @@
 
     <div id="particles-js"> </div>
 
-    <!-- Navigation Bar -->
-    <div id="navigation-container">
-
-        <div id="navigation-bar">
-            <div id="minimal-navbar">
-                <div id="trademark">
-                    <a href="#landing"> Arjun. </a>
-                </div>
-                <a href="javascript:void(0)" onclick="expandNavbar()" id="expand-navbar">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <div id="navigation-links">
-                <a href="#work"> work </a>
-                <a href="#project"> projects </a>
-                <a target="_blank" href="resume/ArjunMittalResume2025.pdf">resume</a>
-                <a href="#footer"> contact </a>
-            </div>
-        </div>
-
-    </div>
-
     <script src="js/index.js"></script>
 
     <!-- html content -->
@@ -60,34 +35,35 @@
         <div id="content">
 
             <!-- Name -->
-            <div id="name">
-                <p> Hello <img id="waving" style="display: inline;" src="images/waving_hand.png" /> , My name is Arjun! </p>
+            <div id="name-line-wrapper">
+                <div id="name-wrapper">
+                  <span id="name-text">arjun mittal</span>
+                  <img id="waving" src="images/waving_hand.png" alt="wave">
+                </div>
+                <div id="name-underline"></div>
             </div>
-
-            <div id="large-divider"> </div>
-
+              
             <!-- Blurb -->
             <div id="intro-description">
                 <p>
-                    I'm a computer engineering alum from the University of Toronto with an interest in machine learning, robotics, and autonomous vehicles.
-                    <span id="more-info"> <a target="_blank" href="https://www.linkedin.com/in/arjunm98/"> Connect with me! </a> </span>
+                    I'm a software engineer currently at Apple <span class="emoji">🍎</span>, working on Apple Intelligence features at the intersection of AI and user experience — including improvements to keyboard autocorrection and text prediction.
                 </p>
+                
+                <p>
+                    I studied Computer Engineering at the University of Toronto and enjoy building systems that are fast, intuitive, and grounded in solid design. I'm especially interested in the overlap between machine learning, infrastructure, and product.
+                </p>
+                
+                <p>
+                    Outside of work, I’m usually lifting weights <span class="emoji">💪</span>, playing tennis 🎾, or trying to make the perfect yogurt bowl. Always down to chat — feel free to <a target="_blank" href="mailto:mittal.arjun6978@gmail.com">reach out</a> or <a target="_blank" href="https://www.linkedin.com/in/arjunm98/">connect on LinkedIn</a>.
+                </p>                
             </div>
 
             <div class="social-icons" id="social-icons-content">
                 <ul>
-                    <li>
-                        <a target="_blank" href="https://github.com/ArjunM98"> <i class="fab fa-github"> </i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:mittal.arjun6978@gmail.com"> <i class="far fa-envelope-open"> </i> </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/arjunm98/"> <i class="fab fa-linkedin-in"></i> </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="resume/ArjunMittalResume2025.pdf"> <i class="far fa-file-alt"></i> </a>
-                    </li>
+                  <li><a href="https://github.com/ArjunM98" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <li><a href="mailto:mittal.arjun6978@gmail.com"><i class="far fa-envelope-open"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/arjunm98/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="resume/ArjunMittalResume2025.pdf" target="_blank"><i class="far fa-file-alt"></i></a></li>
                 </ul>
             </div>
 
@@ -99,264 +75,6 @@
     <script src="js/app.js"></script>
 
     <div id="spacer"> </div>
-
-    <div class="list">
-        <div class="list-header" id="work">
-            <p> Experiences. </p>
-        </div>
-        <div class="underline"></div>
-
-        <div class="list-item-reverse">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> RBC Capital Markets <span class="experience-type"> | ETF Market Making - Quantitative Analyst Internship </span> </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-date">
-                    <p> May 2019 - Present </p>
-                </div>
-                <div class="list-container-description">
-                    <p>
-                        Designed and implemented a strategy to manage book risk during periods of high market volatility, resulting in savings of a large five figure amount. Engineered new process to optimize system parameters, increasing RBC’s ETF market share by 8% within 2 months.  Created new analytical reporting suite, improving the availability and accessibility on key performance indicators, helping top executives make important investment decisions. Collaborated closely with clients to discuss use cases and feature prioritization for an inventory management tool.
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> Python </div>
-                    <div class="tag"> KDB/Q </div>
-                </div>
-            </div>
-            <div class=list-image>
-                <img src="images/RBC.png" />
-            </div>
-        </div>
-
-        <div class="list-item">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> Scotiabank <span class="experience-type"> | Payments - Software Engineering Internship </span> </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-date">
-                    <p> Summer 2018 </p>
-                </div>
-                <div class="list-container-description">
-                    <p>
-                        Worked on ScotiaConnect, a digital banking platform for businesses, creating a file transfer management system following MVC architecture, with over 1 million users. Architected real-time dashboard on Google Cloud Services to monitor customer KPI’s. Automated generation of SQL database scripts, for syncing development environments with production environment, decreasing deployment time by 50%. 
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> Java </div>
-                    <div class="tag"> Google Cloud Services </div>
-                    <div class="tag"> Javascript </div>
-                    <div class="tag"> DB2 </div>
-                    <div class="tag"> ESQL </div>
-                </div>
-            </div>
-            <div class=list-image>
-                <img src="images/scotiabank.png" />
-            </div>
-        </div>
-
-        <div class="list-item-reverse">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> Clausehound <span class="experience-type"> | Software Engineering Internship </span> </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-date">
-                    <p> Summer 2017 </p>
-                </div>
-                <div class="list-container-description">
-                    <p>
-                        Integrated web analytics with customer retention management dashboard, leading to an increase of click-through rate by 15%. Redesigned Clausehound landing pages through A/B testing increasing customer retention rate by 20%. 
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> HTML/CSS </div>
-                    <div class="tag"> Javascript </div>
-                    <div class="tag"> Klipfolio </div>
-                    <div class="tag"> UnBounce </div>
-                </div>
-            </div>
-            <div class=list-image>
-                <img src="images/clausehound.png" />
-            </div>
-        </div>
-
-        <div class="list-item">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> aUToronto <span class="experience-type"> | Community </span> </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-date">
-                    <p> Summer 2018 - Present </p>
-                </div>
-                <div class="list-container-description">
-                    <p>
-                        Interfaced ROS & CARLA to create a simulation environment to test autonomous algorithms and collect training data. Collaborated with simulation team to construct 3D models of traffic safety signs to be used in our simulation environment. 
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> C++ </div>
-                    <div class="tag"> Python </div>
-                    <div class="tag"> ROS </div>
-                    <div class="tag"> CARLA </div>
-                </div>
-            </div>
-            <div class=list-image>
-                <img src="images/aUToronto.png" />
-            </div>
-        </div>
-
-    </div>
-
-    <div class="list" id="project">
-
-        <div class="list-header">
-            <p> Projects. </p>
-        </div>
-
-        <div class="underline"></div>
-
-        <div class="list-item">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> Mapper </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-description">
-                    <p>
-                        Constructed Google Maps replica using EasyGL for graphics, Dijkstra for path finding, and 2-opt swap heuristics for optimizing path finding algorithm.
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> C++ </div>
-                    <div class="tag"> C </div>
-                    <div class="tag"> Boost </div>
-                    <div class="tag"> EasyGL </div>
-                </div>
-            </div>
-            <div class="list-image">
-                <img src="images/mapper.png" />
-            </div>
-        </div>
-
-        <div class="list-item-reverse">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> InvestIt </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-description">
-                    <p>
-                        Created an equity crowdfunding app that reinvests capital generated from users. Integrated Wealthsimple services using OAuth2, to handle all investments.
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> HTML/CSS </div>
-                    <div class="tag"> Javascript </div>
-                    <div class="tag"> Express.js </div>
-                    <div class="tag"> Node.js </div>
-                    <div class="tag"> jQuery.js </div>
-                    <div class="tag"> Wealthsimple API </div>
-                </div>
-            </div>
-            <div class="list-image">
-                <img src="images/InvestIt.png" />
-            </div>
-        </div>
-
-        <div class="list-item">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> Grubit </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-description">
-                    <p>
-                            Winner at EngHacks 2018 - Designed a tinder like web application used to ease decision making process of where to eat. Optimized recommendations using sentiment analysis on yelp reviews. 
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> Python </div>
-                    <div class="tag"> HTML/CSS </div>
-                    <div class="tag"> Javascript </div>
-                    <div class="tag"> Express.js </div>
-                    <div class="tag"> Node.js </div>
-                </div>
-            </div>
-            <div class="list-image">
-                <img src="images/grubit.png" />
-            </div>
-        </div>
-
-        <div class="list-item-reverse">
-            <div class="list-container">
-                <div class="list-container-title">
-                    <p> UrbanTracker </p>
-                </div>
-                <div class="list-title-underline"> </div>
-                <div class="list-container-description">
-                    <p>
-                        Developed an award-winning app at QHacks2017, tracking an individual’s carbon emissions. Used arduino sensors to collect energy usage data ranging from temperature of room & light usage. 
-                    </p>
-                </div>
-                <div class="list-tags">
-                    <div class="tag"> Python </div>
-                    <div class="tag"> Java </div>
-                    <div class="tag"> C </div>
-                </div>
-            </div>
-            <div class="list-image">
-                <img src="images/UrbanTracker.png" />
-            </div>
-        </div>
-
-    </div>
-
-
-    </div>
-
-    <!-- Contact/footer of home page -->
-    <div id="footer">
-        <div id="footer-content">
-
-            <div id="outro-title">
-                <p> Lets Connect </p>
-            </div>
-
-            <div id="outro-description">
-                <p> Curious to learn more? Shoot me a message via one of the mediums listed below! </p>
-            </div>
-
-            <div class="social-icons" id="social-icons-footer">
-                <ul>
-                    <li>
-                        <a target="_blank" href="https://github.com/ArjunM98"> <i class="fab fa-github"> </i></a>
-                        </i>
-                    </li>
-                    <li>
-                        <a href="mailto:mittal.arjun6978@gmail.com"> <i class="far fa-envelope-open"> </i> </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/arjunm98/"> <i class="fab fa-linkedin-in"></i> </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="resume/ArjunMittalResume2025.pdf"> <i class="far fa-file-alt"></i> </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div id="copyright">
-            <p> &copy Made with
-                <i class="far fa-heart"> </i> by Arjun Mittal </p>
-        </div>
-
-    </div>
-
 </body>
 
 </html>
