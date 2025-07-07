@@ -31,52 +31,30 @@
     font-family: 'Nunito', sans-serif;
 }
 
-#name-line-wrapper {
+#name-block {
     display: inline-block;
     text-align: left;
 }
-  
-#name-wrapper {
+
+#name-row {
     display: flex;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    font-size:clamp(2rem, 7vw, 2.8rem);
+    font-size: clamp(2rem, 7vw, 2.8rem);
     font-weight: 800;
-}  
-
-#name-block{
-    display:inline-block;
-    position:relative;        /* so the underline stays with it */
-    font-family:'Raleway',sans-serif;
-    font-size:2.8rem;
-    font-weight:800;
-    margin:0;                 /* keep your existing margins if any */
 }
 
-#name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.8rem;
-    font-weight: 800;
-    margin: 0;
-    display: inline;
-    position: relative;
+#name-underline {
+    width: 120px;
+    height: 3px;
+    background: #235493;
+    margin: 1rem 0 2rem 0;  /* NO auto => stays left aligned */
+    border-radius: 2px;
 }
 
 #name-text {
     display: inline-block;
     white-space: nowrap;
-}
-  
-#name-text::after{
-    content:'';
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:-1.1rem;           /* gap between text and line             */
-    width:120px;              /* line length — tweak to taste          */
-    height:3px;
-    background:#235493;
-    border-radius:2px;
 }
 
 #name .emoji {
@@ -84,28 +62,12 @@
     vertical-align: -0.1em;   /* optional fine-tune */
 }
 
-#name-underline {
-    width: 120px;
-    height: 3px;
-    background: #235493;
-    margin: 1.1rem 0 2.2rem 0;
-    border-radius: 2px;
-}
-
 @media (max-width:480px){
     #name-underline{
-        width:80px;               /* shorter line on phones */
-        margin:0.9rem 0 2rem 0;   /* slightly tighter gap   */
+      width:80px;               /* shorter line on phones */
+      margin:0.9rem 0 2rem 0;   /* slightly tighter gap   */
     }
 }  
-
-#large-divider {
-    height: 0.5vh;
-    background-color: #235493;
-    width: 10vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
 
 #intro-description p {
     font-size: 1.1rem;
@@ -115,27 +77,15 @@
     color: #212121;
 }
 
-#more-info {
-    font-weight: bold;
-    color: #235493;
-    font-style: italic;
-    transition: 0.25s ease-in-out;
-}
-
-#more-info:hover {
-    color: white;
-    background-color: #235493;
-}
-
 #social-icons-content a {
     color: #235493;
 }
 
 #waving{
-    width:1.35em;
-    height:1.35em;
-    margin-left:1rem;      /* space between name and emoji          */
-    vertical-align:-0.15em;   /* sit nicely on the baseline            */
+    width:1em;
+    height:1em;
+    margin-left:1rem;      /* space between name and emoji  */
+    vertical-align:-0.15em;   /* sit nicely on the baseline */
     transform-origin:70% 70%;
     animation:rotation .4s infinite alternate ease-in-out;
 }
@@ -186,12 +136,6 @@
 
 .social-icons {
     font-size: 1.5rem;
-}
-
-#spacer {
-    width: 100vw;
-    height: 3vh;
-    background-color: #F8F9F9;
 }
 
 .emoji {
